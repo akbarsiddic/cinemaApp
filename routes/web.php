@@ -16,7 +16,7 @@ use App\Http\Controllers\MoviesController;
 */
 
 // get all movies to display on the home page
-Route::resource('/', MoviesController::class);
+Route::resource('/movies', MoviesController::class);
 
 
 Route::get('/', function () {
