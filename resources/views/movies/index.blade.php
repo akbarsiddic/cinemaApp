@@ -8,7 +8,10 @@
         <h2 class="card-title">{{ $movie->title }}</h2>
         <p>{{ $movie->release_date }}</p>
         <div class="card-actions justify-end">
-            <button class="btn btn-outline">Book Your Ticket Now</button>
+            {{-- redirect to selected movie --}}
+            <a href="{{ route('movies.show', $movie->id) }}" class="btn btn-outline">View Details</a>
+            {{-- redirect to booking page --}}
+
         </div>
     </div>
 </div>

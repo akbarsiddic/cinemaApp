@@ -9,24 +9,16 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=inter:400,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,600" rel="stylesheet" />
 
 
 </head>
 
 <body class="antialiased">
     <div>
-        <nav>
-            {{-- <div class="max-w-5xl mx-auto px-4">
-                <div class="flex items-center justify-between h-16">
-                    <a href="/" class="text-2xl text-gray-900 font-semibold">SEA Cinema</a>
-                    <div class="flex space-x-4 text-gray-900">
-                        <a href="#">Login</a>
-                        <a href="#">Register</a>
 
-                    </div>
-                </div>
-            </div> --}}
+        <nav>
+
             <div class="navbar bg-base-100">
                 <a href="/" class="btn btn-ghost normal-case text-xl">SEA Cinema</a>
             </div>

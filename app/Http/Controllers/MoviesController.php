@@ -22,6 +22,7 @@ class MoviesController extends Controller
      * Show the form for creating a new resource.
      */
     public function create()
+
     {
         //
     }
@@ -29,6 +30,7 @@ class MoviesController extends Controller
     /**
      * Store a newly created resource in storage.
      */
+
     public function store(Request $request)
     {
         // validate the data
@@ -52,14 +54,18 @@ class MoviesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Movies $movies)
+    public function show($id)
     {
-        //
+        // display single movie
+        $movies = Movies::findOrFail($id);
+
+        return view('movies.show', compact('movies'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
+
     public function edit(Movies $movies)
     {
         //
