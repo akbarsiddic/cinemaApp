@@ -16,6 +16,9 @@ export default {
             },
         },
     },
+    daisyui: {
+        themes: ["retro", "luxury", "synthwave", "dark"],
+    },
 
     plugins: [require("daisyui")],
 };
