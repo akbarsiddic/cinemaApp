@@ -18,6 +18,12 @@
                     <p class="text-white">{{ $movies->release_date }}</p>
                     <p class="text-white">{{ $movies->duration }}</p>
                     <p class="text-white tracking-wide">{{ $movies->description }}</p>
+                    <p class="text-white">Rp {{ number_format($movies->ticket_price, 0, ',', '.') }}</p>
+                    <div>
+                        {{-- booking --}}
+                        <a href="{{ route('bookings.create', $movies->id) }}"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Booking</a>
+                    </div>
                 </div>
             </div>
         </div>

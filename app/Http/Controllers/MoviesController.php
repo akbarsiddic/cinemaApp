@@ -39,7 +39,7 @@ class MoviesController extends Controller
             'description' => 'required',
             'age_rating' => 'required',
             'poster_url' => 'required',
-            'price' => 'required',
+            'ticket_price' => 'required',
         ]);
         
         // store in the database

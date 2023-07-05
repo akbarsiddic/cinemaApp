@@ -11,7 +11,7 @@
             <label for="email" class="block font-medium label-text ">{{ __('Email') }}</label>
             <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus
                 autocomplete="username"
-                class="mt-1 px-4 py-2 block w-full input input-bordered  rounded-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                class="mt-1 px-4 py-2 block w-full input input-bordered text-white rounded-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
             @error('email')
             <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
             @enderror
@@ -21,7 +21,7 @@
         <div class="mb-4">
             <label for="password" class="block label-text font-medium ">{{ __('Password') }}</label>
             <input id="password" type="password" name="password" required autocomplete="current-password"
-                class="mt-1 px-4 py-2 block w-full input input-bordered rounded-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                class="mt-1 px-4 py-2 block w-full text-white input input-bordered rounded-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
             @error('password')
             <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
             @enderror

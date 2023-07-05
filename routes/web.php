@@ -3,7 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MoviesController;
-
+use App\Http\Controllers\BookingsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,10 +18,18 @@ use App\Http\Controllers\MoviesController;
 // get all movies to display on the home page
 Route::resource('/movies', MoviesController::class);
 
+// booking routes
+// Route::get('/bookings/create', [App\Http\Controllers\BookingsController::class, 'create'])->name('bookings.create');
+// Route::post('/bookings/create', [App\Http\Controllers\BookingsController::class, 'store'])->name('bookings.store');
+// Route::get('/bookings/create', [App\Http\Controllers\BookingsController::class, 'index']);
+// Route::resource('/bookings', BookingsController::class)->name('index', 'bookings.index', 'store', 'bookings.store');
+Route::get('/bookings/create/{id}', [BookingsController::class, 'create'])->name('bookings.create');
+Route::post('/bookings/create', [BookingsController::class, 'store'])->name('bookings.store');
+
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
